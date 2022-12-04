@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' type='text/css' media='screen' href='main2.css'>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+        </style>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+       
+    <title>Document</title>
+</head>
+<body>
+    <div id="page">
+        <div id="nav">
+                <img src="bmw.png" id="img">
+            <div id="content">
+                <i class="bi bi-arrow-90deg-right"onclick="hidemenu()"></i>
+                <div class="nav-items">Contact</div>
+                <div class="nav-items">Benefits</div>
+                <div class="nav-items">Recruits</div>
+                <div class="nav-items">Placement</div>   
+            </div>
+            <i class="bi bi-list"onclick="showmenu()"></i>
+        </div>
+                  <div id="about">
+                        <div id="car1" class="car"><img src="1.jpg" id="1"class="image"><h1>Open eyes to all <br>  new BMW</h1></div>
+                         <div id="car2" class="car"><img src="2.jpg" id="2"class="image"><h1>Take the moment one <br> step closer</h1></div>
+                  </div>
+    </div>
+</body>
+<script>
+
+             var content= document.getElementById("content");
+                  function showmenu() {
+                    content.style.right="0px";
+                  }
+                  function hidemenu() {
+                    content.style.right="-30vh";
+                  }
+
+</script>
+</html>
